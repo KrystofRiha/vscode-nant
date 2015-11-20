@@ -1,0 +1,25 @@
+{
+	"name": "nant",
+	"description": "NAnt Build File support for VS Code",
+	"version": "0.0.1",
+	"publisher": "Krystof Riha",
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "nant",
+			"aliases": ["NAnt Build File", "nant"],
+			"extensions": [".build"],
+			"configuration": "./nant.configuration.json"
+		}],
+		"grammars": [{
+			"language": "nant",
+			"scopeName": "source.nant-build",
+			"path": "./syntaxes/nant.tmLanguage"
+		}]
+	}
+}
